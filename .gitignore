@@ -1,0 +1,10 @@
+# File ẩn macOS / ổ exFAT
+._*
+.DS_Store
+# File build (bản cài để ở GitHub Releases)
+Ban build/
+*.zip
+# Chứng chỉ ký app riêng của máy
+.ky-app
+# Ghi chú nội bộ
+GHI CHÚ.md
