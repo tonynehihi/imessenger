@@ -1,4 +1,4 @@
-// iMessenger by @tonynehihi – fork từ Vduck141/messenger-vdk (CC BY-NC 4.0), rebrand 04/11/2026
+// iMessenger by @tonynehihi — phát triển từ mã nguồn của Vduck141 (CC BY-NC 4.0)
 // Học theo app "MessengerApp" của Stefan (MIT, github.com/stefanminch/messenger-mac),
 // nhưng viết lại bằng Swift + WKWebView (nhân Safari) thay cho Electron (nhân Chrome).
 //
@@ -1770,7 +1770,7 @@ let ngayPhatHanh = "04/11/2026"
 let tenApp = "iMessenger"           // tên app (Tony chốt 04/11: iMessenger by @tonynehihi)
 let coGiMoi = """
 1.0.0 – 04/11/2026
-• **REBRAND** from Messenger Vdk → iMessenger by @tonynehihi
+• **REBRAND** → iMessenger by @tonynehihi
 • Update checker + auto-install now point to tonynehihi/imessenger releases
 • Fresh Ed25519 signing key for updates
 

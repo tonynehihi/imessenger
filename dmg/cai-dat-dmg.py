@@ -1,4 +1,4 @@
-# Cấu hình dmgbuild cho DMG Messenger Vdk (dmgbuild tự ghi bố cục .DS_Store – không cần điều khiển Finder,
+# Cấu hình dmgbuild cho DMG iMessenger (dmgbuild tự ghi bố cục .DS_Store – không cần điều khiển Finder,
 # vì AppleScript đặt ảnh nền của Finder trên macOS 27 báo lỗi -10000).
 import unicodedata
 format = 'UDZO'
@@ -17,7 +17,7 @@ show_sidebar = False
 icon_size = 96
 text_size = 12
 icon_locations = {
-    'Messenger Vdk.app': (165, 150),
+    'iMessenger.app': (165, 150),
     'Applications': (495, 150),
     'Hướng dẫn mở lần đầu.html': (330, 318),
 }

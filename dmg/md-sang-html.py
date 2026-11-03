@@ -49,5 +49,5 @@ blockquote{margin:10px 0;padding:6px 12px;border-left:4px solid #f0b400;backgrou
 img{max-width:100%;border-radius:10px;margin:8px 0;box-shadow:0 2px 10px #0002}table{border-collapse:collapse;width:100%}td,th{border:1px solid #ddd;padding:6px 8px;text-align:left}
 th{background:#f5f5f7}.them{margin:4px 0 4px 0}
 a{color:#0a58d0}@media (prefers-color-scheme:dark){a{color:#6cb0ff}body{background:#1c1c1e;color:#eee}code{background:#333}th{background:#2a2a2d}td,th{border-color:#444}blockquote{background:#3a3220}h3{color:#5aa2ff}}"""
-open(ra, 'w', encoding='utf-8').write('<!doctype html><html lang="vi"><head><meta charset="utf-8"><title>Hướng dẫn mở lần đầu – Messenger Vdk</title><style>%s</style></head><body>%s</body></html>' % (css, '\n'.join(out)))
+open(ra, 'w', encoding='utf-8').write('<!doctype html><html lang="vi"><head><meta charset="utf-8"><title>Hướng dẫn mở lần đầu – iMessenger</title><style>%s</style></head><body>%s</body></html>' % (css, '\n'.join(out)))
 print('ok', ra)

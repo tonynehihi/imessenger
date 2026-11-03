@@ -15,7 +15,7 @@ for k in [1.0, 2.0] {
         NSAttributedString(string: s, attributes: [.font: NSFont.systemFont(ofSize: co, weight: dam), .foregroundColor: mau, .paragraphStyle: p])
             .draw(in: NSRect(x: 20, y: h - y - co * 1.4, width: w - 40, height: co * 1.6))
     }
-    chu("Kéo Messenger Vdk vào Applications", 26, 20, .semibold, NSColor(calibratedWhite: 0.15, alpha: 1))
+    chu("Kéo iMessenger vào Applications", 26, 20, .semibold, NSColor(calibratedWhite: 0.15, alpha: 1))
     // mũi tên giữa 2 icon (icon ở x=165 và x=495, tâm y=150 tính từ trên)
     let mau = NSColor(calibratedRed: 0.20, green: 0.45, blue: 0.95, alpha: 0.9)
     let y = h - 150, m = NSBezierPath()
