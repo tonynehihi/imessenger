@@ -2059,9 +2059,8 @@ extension AppDelegate {
 // MARK: Tự cập nhật (anh chọn mức 2, 03/11): hỏi GitHub Releases → có bản mới → tải zip + chữ ký → kiểm chữ ký Ed25519
 // bằng khoá công khai gắn sẵn (khoá bí mật chỉ nằm trong Keychain máy anh, xem phat-hanh/khoa.swift) → thay app → mở lại.
 // File do app tự tải không bị gắn dấu "tải từ Internet" → người dùng không phải bấm "Vẫn mở" lại.
-// TODO(Tony): chạy «swift phat-hanh/khoa.swift tao» trên máy Mac rồi dán public key nó in ra vào đây.
-// Để placeholder là cập nhật trong app sẽ KHÔNG cài bản nào (an toàn) cho tới khi có key thật.
-let khoaCongKhaiCapNhat = "CHUA-CO-KEY-CUA-TONY"
+// Public key ký cập nhật của Tony (tạo 03/11/2026, private key trong Keychain máy Tony)
+let khoaCongKhaiCapNhat = "TKyrjF0Lo/97QETXDMWFJBeanwpyqqOTJzmiXOOpSzk="
 let khoGitHub = "tonynehihi/imessenger"
 
 struct BanPhatHanh { let ban: String; let ghiChu: String; let zip: URL?; let sig: URL?; let trang: URL }
