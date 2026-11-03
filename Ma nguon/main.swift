@@ -111,7 +111,7 @@ let jsThongBao = """
     if (!ds.some(d => d.dam)) return null;
     // Tên chat = dòng đầu của chữ trong link; tin = phần còn lại (nhóm: «Người gửi: nội dung»), bỏ chữ giờ / nhãn
     const dong = (a.innerText || '').split('\\n').map(t => t.trim()).filter(t => t && !laNhan(t));
-    const ten = dong[0] || (ds[0] && ds[0].t) || 'Messenger';
+    const ten = dong[0] || (ds[0] && ds[0].t) || 'iMessenger';
     const tin = (dong.length > 1 ? dong.slice(1) : ds.slice(1).map(d => d.t)).join(' ').replace(/:\\s+/, ': ').trim();
     return { a, ten, tin: tin || 'Tin nhắn mới', khoa: a.getAttribute('href') + '|' + tin };
   }).filter(Boolean);
@@ -497,7 +497,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         window = CuaSoChinh(contentRect: NSRect(x: 0, y: 0, width: 1200, height: 800),
                           styleMask: [.titled, .closable, .miniaturizable, .resizable],
                           backing: .buffered, defer: false)
-        window.title = "Messenger"
+        window.title = tenApp
         // Cao tối thiểu 400 (không phải 600): chia 4 góc màn hình mỗi ô chỉ cao ~530px
         window.minSize = NSSize(width: 400, height: 400)
         window.isReleasedWhenClosed = false            // bấm đỏ chỉ ẩn, không thoát app
@@ -556,7 +556,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         webCuaThongBao[id] = message.webView
 
         let nd = UNMutableNotificationContent()
-        nd.title = d["tieuDe"] as? String ?? "Messenger"
+        nd.title = d["tieuDe"] as? String ?? tenApp
         nd.body = d["noiDung"] as? String ?? ""
         nd.sound = .default
         if let tag = d["tag"] as? String, !tag.isEmpty { nd.threadIdentifier = tag }   // gom theo cuộc trò chuyện
@@ -720,7 +720,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
         if let w = wv.window { a.beginSheetModal(for: w, completionHandler: xong) } else { xong(a.runModal()) }
     }
 
-    // Nhật ký tải trang (xem bằng: log show --last 5m --predicate 'process == "TonyMessenger"')
+    // Nhật ký tải trang (xem bằng: log show --last 5m --predicate 'process == "iMessenger"')
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         // Chỉ ghi tên miền + đường dẫn (bỏ phần sau "?" – link cuộc gọi chứa mã tài khoản)
         let duong = (webView.url?.host ?? "?") + (webView.url?.path ?? "").replacingOccurrences(of: "[0-9]{5,}", with: "N", options: .regularExpression)
@@ -1255,7 +1255,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
 
         @discardableResult
         func them(_ tieuDe: String, _ items: [NSMenuItem]) -> NSMenu {
-            let goc = NSMenuItem()
+            let goc = NSMenuItem(title: tieuDe, action: nil, keyEquivalent: "")
             let m = NSMenu(title: tieuDe)
             items.forEach { m.addItem($0) }
             goc.submenu = m
