@@ -1,19 +1,11 @@
 iMessenger by @tonynehihi
 Copyright (c) 2026 tonynehihi
 
-Phát triển từ mã nguồn của Vduck (Vduck141/messenger-vdk),
-giấy phép CC BY-NC 4.0 — xem toàn văn bên dưới.
-
-Được dùng, chia sẻ, sửa lại – miễn là ghi nguồn (Vduck, link kho gốc
-https://github.com/Vduck141/messenger-vdk) và KHÔNG dùng vào mục đích
-thương mại (bán, thu phí, quảng cáo kiếm tiền).
+Giấy phép CC BY-NC 4.0 — xem toàn văn bên dưới.
+KHÔNG dùng vào mục đích thương mại (bán, thu phí, quảng cáo kiếm tiền).
 
 Ý tưởng gốc: MessengerApp của Stefan
-(github.com/stefanminch/messenger-mac, giấy phép MIT). Bản này viết lại
-từ đầu bằng Swift.
-
-Các bản đã phát hành trước ngày 03/11/2026 (0.6.0, 0.6.1) vẫn theo giấy
-phép MIT như lúc phát hành.
+(github.com/stefanminch/messenger-mac, giấy phép MIT).
 
 Attribution-NonCommercial 4.0 International
 

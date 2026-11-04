@@ -1,4 +1,4 @@
-// iMessenger by @tonynehihi — phát triển từ mã nguồn của Vduck141 (CC BY-NC 4.0)
+// iMessenger by @tonynehihi
 // Học theo app "MessengerApp" của Stefan (MIT, github.com/stefanminch/messenger-mac),
 // nhưng viết lại bằng Swift + WKWebView (nhân Safari) thay cho Electron (nhân Chrome).
 //

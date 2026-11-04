@@ -34,7 +34,6 @@ Mã nguồn: `Ma nguon/main.swift` (toàn bộ app, chú thích tiếng Việt).
 
 ## Ghi công
 - Ý tưởng từ **MessengerApp** của Stefan – [stefanminch/messenger-mac](https://github.com/stefanminch/messenger-mac) (MIT).
-- Phát triển từ mã nguồn của **Vduck** – [Vduck141/messenger-vdk](https://github.com/Vduck141/messenger-vdk) (CC BY-NC 4.0).
 
 Giấy phép: [CC BY-NC 4.0](LICENSE) – được dùng, chia sẻ, sửa lại nếu ghi nguồn, **không dùng vào mục đích thương mại**.
 
